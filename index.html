@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page with JavaScript 🎮</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section class="counter-section">
+      <h2>Click Counter</h2>
+      <p>Clicks: <span id="count">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3 class="question">What is JavaScript?</h3>
+        <p class="answer">JavaScript is a scripting language that makes web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">What can I do with it?</h3>
+        <p class="answer">You can build dynamic interfaces, games, and much more!</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" />
+
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
